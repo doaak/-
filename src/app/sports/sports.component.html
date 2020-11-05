@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row pt-4">
+        <div *ngFor="let new of news" class="col-md-4 " >
+            <div class="card" >
+                <img [src]="new.urlToImage" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{new.title}}</h5>
+                  <p class="card-text">{{new.description}}</p>
+                  <p class="card-text">{{new.publishedAt}}</p>
+                  <button class="btn btn-danger rounded "> <a class="text-white" [href]="new.url">التفاصيل</a></button>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
